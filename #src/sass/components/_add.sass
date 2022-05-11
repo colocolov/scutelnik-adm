@@ -1,0 +1,56 @@
+.add
+  padding-top: 150px
+  &__row
+    display: flex
+    // & .add__left
+    //   border-bottom: 2px solid $bgc
+    // & .add__right:not(::last-child)
+    //   border-bottom: 2px solid $red
+
+  &__left
+    background-color: $black
+    color: $white
+    width: 250px
+    padding: 50px 28px 50px 50px
+    display: flex
+    flex-shrink: 0
+    // &:not(:last-child)
+    border-bottom: 2px solid $bgc
+  &__right
+    padding: 50px
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+    // &:not(:last-child)
+    border-bottom: 2px solid $red
+    border-right: 2px solid $red
+    & .input:first-child
+      margin-bottom: 40px
+
+  &__table
+    width: 100%
+    display: table-row
+    border-collapse: separate
+    border-spacing: 25px
+    &-input
+      border: 1px solid $black
+      width: 100%
+      margin-bottom: 0 !important
+    & tr
+      margin-bottom: 25px
+    & td
+      margin-right: 86px
+      &:not(:last-child)
+
+  &__descrip
+    width: 100%
+    padding: 50px
+    border: 1px solid $black
+    border-radius: 5px
+    resize: none
+
+  &__sum
+    @include font(400, 32, 38)
+    color: $black

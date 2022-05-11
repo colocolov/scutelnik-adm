@@ -182,6 +182,17 @@ input {
   height: 0;
 }
 
+.input {
+  border: 1px solid transparent;
+  border-radius: 7px;
+  background-color: transparent;
+  width: 40%;
+  padding: 10px;
+}
+.input:focus {
+  border-bottom: 1px solid #2F2F2F;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -422,7 +433,7 @@ input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 .index-main__add {
   margin-right: 98px;
@@ -491,6 +502,77 @@ input {
   font-size: 48px;
   line-height: 1.1666666667;
   color: #FFFFFF;
+}
+
+.add {
+  padding-top: 150px;
+}
+.add__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.add__left {
+  background-color: #2F2F2F;
+  color: #FFFFFF;
+  width: 250px;
+  padding: 50px 28px 50px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-bottom: 2px solid #F6F6F6;
+}
+.add__right {
+  padding: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-bottom: 2px solid #DC101C;
+  border-right: 2px solid #DC101C;
+}
+.add__right .input:first-child {
+  margin-bottom: 40px;
+}
+.add__table {
+  width: 100%;
+  display: table-row;
+  border-collapse: separate;
+  border-spacing: 25px;
+}
+.add__table-input {
+  border: 1px solid #2F2F2F;
+  width: 100%;
+  margin-bottom: 0 !important;
+}
+.add__table tr {
+  margin-bottom: 25px;
+}
+.add__table td {
+  margin-right: 86px;
+}
+.add__descrip {
+  width: 100%;
+  padding: 50px;
+  border: 1px solid #2F2F2F;
+  border-radius: 5px;
+  resize: none;
+}
+.add__sum {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.1875;
+  color: #2F2F2F;
 }
 
 @media (min-width: 992px) {
