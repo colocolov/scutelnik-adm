@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  @include('html/head.html', { "title":"Главная" })
+  <body>
+    <div class="wrapper">
+      @include('html/header.html')
+
+      <main class="main">
+        <!--  -->
+        <section class="add">
+          <div class="container">
+            <div class="add__row">
+              <div class="add__left">Клиент</div>
+              <div class="add__right">
+                <input type="text" class="input" placeholder="" required />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--  -->
+      </main>
+      @include('html/footer.html')
+    </div>
+
+    <!-- подключение скриптов -->
+    <!-- <script defer src="js/libs.js"></script> -->
+    <script defer src="js/main.min.js"></script>
+  </body>
+</html>
