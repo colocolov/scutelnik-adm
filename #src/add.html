@@ -36,33 +36,37 @@
               <div class="add__left">Запчасти</div>
               <div class="add__right">
                 <table class="add__table">
-                  <tr>
-                    <td>Запчасть:</td>
-                    <td>Цена:</td>
-                    <td>Бренд:</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input type="text" class="input add__table-input" />
-                    </td>
-                    <td>
-                      <input type="text" class="input add__table-input" />
-                    </td>
-                    <td>
-                      <input type="text" class="input add__table-input" />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <input type="text" class="input add__table-input" />
-                    </td>
-                    <td>
-                      <input type="text" class="input add__table-input" />
-                    </td>
-                    <td>
-                      <input type="text" class="input add__table-input" />
-                    </td>
-                  </tr>
+                  <thead class="add__table-head">
+                    <tr class="add__table-row">
+                      <th class="add__table-th"><span>Запчасть:</span></td>
+                      <th class="add__table-th"><span>Цена:</span></th>
+                      <th class="add__table-th"><span>Бренд:</span></th>
+                    </tr>
+                  </thead>
+                  <tbody class="add__table-body">
+                    <tr class="add__table-row">
+                      <td class="add__table-td">
+                        <input type="text" class="input add__table-input" />
+                      </td>
+                      <td class="add__table-td">
+                        <input type="text" class="input add__table-input" />
+                      </td>
+                      <td class="add__table-td">
+                        <input type="text" class="input add__table-input" />
+                      </td>
+                    </tr>
+                    <tr class="add__table-row">
+                      <td class="add__table-td">
+                        <input type="text" class="input add__table-input" />
+                      </td>
+                      <td class="add__table-td">
+                        <input type="text" class="input add__table-input" />
+                      </td>
+                      <td class="add__table-td">
+                        <input type="text" class="input add__table-input" />
+                      </td>
+                    </tr>
+                  </tbody>
                 </table>
               </div>
             </div>
@@ -75,6 +79,7 @@
                   name="descrip"
                   id="descrip"
                   rows="10"
+                  wrap="off"
                   placeholder="Поле ввода ..."
                 ></textarea>
               </div>
@@ -91,7 +96,7 @@
         </section>
         <!--  -->
       </main>
-      @include('html/footer.html')
+      @include('html/footer-add.html')
     </div>
 
     <!-- подключение скриптов -->
