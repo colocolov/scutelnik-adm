@@ -669,6 +669,35 @@ input {
   font-size: 18px;
 }
 
+.article__input:first-child {
+  margin-bottom: 20px !important;
+}
+.article__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.article__cell {
+  width: 33%;
+}
+.article__cell-add {
+  height: 20px;
+  width: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
 .pagination {
   display: block;
   margin-top: 70px;
