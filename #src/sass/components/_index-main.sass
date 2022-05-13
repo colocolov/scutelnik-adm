@@ -17,6 +17,7 @@
       // width: 295px
       padding: 13px 54px 13px 91px
       // display: block
+      transition: background-color 0.3s linear
       &::after
         position: absolute
         content: ''
@@ -25,9 +26,10 @@
         left: 52px
         width: 20px
         height: 20px
-        background: url(../images/icons/sprite.svg#plus)
+        background-image: url(../images/icons/sprite.svg#plus)
         background-repeat: no-repeat
         background-size: contain
+        transition: background-image 0.3s linear
         z-index: 3
   &__verse
     position: relative

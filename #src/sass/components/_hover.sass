@@ -1,6 +1,12 @@
 @media ( min-width: 992px )
-  .index-main__add-btn:hover
-    // padding: 13px 60px 13px 97px
-    background-color: $red
   .login__btn:hover
     background-color: darken($red, 5%)
+  .menu__link:hover::before
+    width: 100%
+  .index-main__add-btn:hover
+    background-color: $red
+    &::after
+      background: url(../images/icons/sprite.svg#plus-dark)
+  .footer-add__btn:hover
+    border: 2px solid $white
+    background-color: $red
