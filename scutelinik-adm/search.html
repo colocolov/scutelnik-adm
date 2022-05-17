@@ -5,9 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#111111" />
-  <!-- <link rel="stylesheet" href="css/adv.css" /> -->
   <link rel="stylesheet" href="css/style.css" />
-  <!-- подключение favicon -->
   <link
     rel="icon"
     type="image/png"
@@ -24,11 +22,17 @@
     <div class="header__menu menu">
       <nav class="menu__body">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="add.html">Новая запись</a></li>
-          <li class="menu__item"><a class="menu__link" href="arhive.html">Архив</a></li>
-          <li class="menu__item"><a class="menu__link" href="login.html">Войти</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="add.html">Новая запись</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="arhive.html">Архив</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="login.html">Войти</a>
+          </li>
           <li class="menu__item"><a class="menu__link" href=""></a></li>
-        </li>
+        </ul>
       </nav>
       <button type="button" class="menu__icon">
         <span></span>
@@ -42,16 +46,24 @@
     </a>
     <form action="search.html" class="header__search">
       <button class="btn-reset header__search-btn">
-        <img class="image header__search-img" src="images/icons/sprite.svg#search" alt="">
+        <img
+          class="image header__search-img"
+          src="images/icons/sprite.svg#search"
+          alt=""
+        />
       </button>
-      <input class="header__search-input" type="text" placeholder="Поиск ..." autofocus>
+      <input
+        class="header__search-input"
+        type="text"
+        placeholder="Поиск ..."
+        autofocus
+      />
     </form>
   </div>
 </header>
 
 
       <main class="main">
-        <!--  -->
         <section class="search">
           <div class="container">
             <div class="search__wrap">
@@ -62,7 +74,7 @@
                 <table class="arhive__table">
                   <thead class="arhive__table-head">
                     <tr class="arhive__table-row">
-                      <th class="arhive__table-th"><span>Имя:</span></td>
+                      <th class="arhive__table-th"><span>Имя:</span></th>
                       <th class="arhive__table-th"><span>Дата:</span></th>
                       <th class="arhive__table-th"><span>Марка:</span></th>
                       <th class="arhive__table-th"><span>Номер авто:</span></th>
@@ -71,37 +83,36 @@
                   </thead>
                   <tbody class="arhive__table-body">
                     <tr class="arhive__table-row">
-                        <td class="arhive__table-td">
-                          <a href="article.html" class="arhive__table-text">Ваня Барбэ</a>
-                        </td>
-                        <td class="arhive__table-td">
-                          <div class="arhive__table-text">10/01/2022</div>
-                        </td>
-                        <td class="arhive__table-td">
-                          <div class="arhive__table-text">Hyundai Getz</div>
-                        </td>
-                        <td class="arhive__table-td">
-                          <div class="arhive__table-text">TRW 675</div>
-                        </td>
-                        <td class="arhive__table-td">
-                          <div class="arhive__table-text">KMHWP81JP3U540753</div>
-                        </td>
+                      <td class="arhive__table-td">
+                        <a href="article.html" class="arhive__table-text"
+                          >Ваня Барбэ</a
+                        >
+                      </td>
+                      <td class="arhive__table-td">
+                        <div class="arhive__table-text">10/01/2022</div>
+                      </td>
+                      <td class="arhive__table-td">
+                        <div class="arhive__table-text">Hyundai Getz</div>
+                      </td>
+                      <td class="arhive__table-td">
+                        <div class="arhive__table-text">TRW 675</div>
+                      </td>
+                      <td class="arhive__table-td">
+                        <div class="arhive__table-text">KMHWP81JP3U540753</div>
+                      </td>
                     </tr>
                   </tbody>
+                </table>
               </div>
             </div>
           </div>
         </section>
-        <!--  -->
       </main>
       <footer class="footer">
   <div class="container"></div>
 </footer>
 
     </div>
-
-    <!-- подключение скриптов -->
-    <!-- <script defer src="js/libs.js"></script> -->
     <script defer src="js/main.min.js"></script>
   </body>
 </html>

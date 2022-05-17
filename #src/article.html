@@ -6,81 +6,148 @@
       @include('html/header.html')
 
       <main class="main">
-        <!--  -->
         <section class="add article">
           <div class="container">
             <div class="add__row">
               <div class="add__left">Клиент</div>
               <div class="add__right">
-                <input type="text" class="input article__input" placeholder="Саня Мейко" />
+                <input
+                  type="text"
+                  class="input article__input"
+                  placeholder="Саня Мейко"
+                />
                 <input
                   type="text"
                   class="input article__input"
                   placeholder="Stanislav Tentiuk"
                 />
-                <input type="text" class="input article__input" placeholder="02.05.2022" />
+                <input
+                  type="text"
+                  class="input article__input"
+                  placeholder="02.05.2022"
+                />
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Машина</div>
               <div class="add__right">
-                <input type="text" class="input article__input" placeholder="Toyota Yaris" />
-                <input type="text" class="input article__input" placeholder="2366492669462" />
-                <input type="text" class="input article__input" placeholder="TNW 163" />
-                <input type="text" class="input article__input" placeholder="350 000" />
+                <input
+                  type="text"
+                  class="input article__input"
+                  placeholder="Toyota Yaris"
+                />
+                <input
+                  type="text"
+                  class="input article__input"
+                  placeholder="2366492669462"
+                />
+                <input
+                  type="text"
+                  class="input article__input"
+                  placeholder="TNW 163"
+                />
+                <input
+                  type="text"
+                  class="input article__input"
+                  placeholder="350 000"
+                />
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Запчасти</div>
               <div class="add__right">
                 <table class="add__table">
                   <thead class="add__table-head">
                     <tr class="add__table-row article__row">
-                      <th class="add__table-th article__cell"><span>Запчасть:</span></td>
-                      <th class="add__table-th article__cell"><span>Цена:</span></th>
-                      <th class="add__table-th article__cell"><span>Бренд:</span></th>
+                      <th class="add__table-th article__cell">
+                        <span>Запчасть:</span>
+                      </th>
+                      <th class="add__table-th article__cell">
+                        <span>Цена:</span>
+                      </th>
+                      <th class="add__table-th article__cell">
+                        <span>Бренд:</span>
+                      </th>
                     </tr>
                   </thead>
                   <tbody class="add__table-body">
                     <tr class="add__table-row article__row">
                       <td class="add__table-td article__cell">
-                        <input type="text" class="input add__table-input" placeholder="Калодка" />
+                        <input
+                          type="text"
+                          class="input add__table-input"
+                          placeholder="Калодка"
+                        />
                       </td>
                       <td class="add__table-td article__cell">
-                        <input type="text" class="input add__table-input" placeholder="500 лей" />
+                        <input
+                          type="text"
+                          class="input add__table-input"
+                          placeholder="500 лей"
+                        />
                       </td>
                       <td class="add__table-td article__cell">
-                        <input type="text" class="input add__table-input" placeholder="Шарашкина контора" />
+                        <input
+                          type="text"
+                          class="input add__table-input"
+                          placeholder="Шарашкина контора"
+                        />
                       </td>
                     </tr>
                     <tr class="add__table-row article__row">
                       <td class="add__table-td article__cell">
-                        <input type="text" class="input add__table-input" placeholder="Калодка" />
+                        <input
+                          type="text"
+                          class="input add__table-input"
+                          placeholder="Калодка"
+                        />
                       </td>
                       <td class="add__table-td article__cell">
-                        <input type="text" class="input add__table-input" placeholder="500 лей" />
+                        <input
+                          type="text"
+                          class="input add__table-input"
+                          placeholder="500 лей"
+                        />
                       </td>
                       <td class="add__table-td article__cell">
-                        <input type="text" class="input add__table-input" placeholder="Шарашкина контора" />
+                        <input
+                          type="text"
+                          class="input add__table-input"
+                          placeholder="Шарашкина контора"
+                        />
                       </td>
                     </tr>
                     <tr class="add__table-row article__row">
                       <td class="add__table-td article__cell">
-                        <input type="text" class="input add__table-input" placeholder="Калодка" />
+                        <input
+                          type="text"
+                          class="input add__table-input"
+                          placeholder="Калодка"
+                        />
                       </td>
                       <td class="add__table-td article__cell">
-                        <input type="text" class="input add__table-input" placeholder="500 лей" />
+                        <input
+                          type="text"
+                          class="input add__table-input"
+                          placeholder="500 лей"
+                        />
                       </td>
                       <td class="add__table-td article__cell">
-                        <input type="text" class="input add__table-input" placeholder="Шарашкина контора" />
+                        <input
+                          type="text"
+                          class="input add__table-input"
+                          placeholder="Шарашкина контора"
+                        />
                       </td>
                     </tr>
                     <tr class="add__table-row article__row">
                       <td class="add__table-td article__cell">
                         <a href="#" class="article__cell-add">
-                          <img class="image " src="@img/icons/sprite.svg#plus" alt="">
+                          <img
+                            class="image"
+                            src="@img/icons/sprite.svg#plus"
+                            alt=""
+                          />
                         </a>
                       </td>
                     </tr>
@@ -88,7 +155,6 @@
                 </table>
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Описание работы</div>
               <div class="add__right">
@@ -97,27 +163,25 @@
                   name="descrip"
                   id="descrip"
                   rows="10"
-                >Мэй, купил ему колодки в шарашкиной конторе! Стас поменял ему их, сломал пару болтов, закрепил проволкой и поехал парень радоваться жизни
-              </textarea>
+                >
+Мэй, купил ему колодки в шарашкиной конторе! Стас поменял ему их, сломал пару болтов, закрепил проволкой и поехал парень радоваться жизни
+              </textarea
+                >
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Цена</div>
               <div class="add__right">
-                <span class="add__sum">5 457 лей</span>
+                <div class="add__sum">
+                  <input type="text" class="input" placeholder="5 457" />лей
+                </div>
               </div>
             </div>
-            <!-- row -->
           </div>
         </section>
-        <!--  -->
       </main>
       @include('html/footer-add.html')
     </div>
-
-    <!-- подключение скриптов -->
-    <!-- <script defer src="js/libs.js"></script> -->
     <script defer src="js/main.min.js"></script>
   </body>
 </html>

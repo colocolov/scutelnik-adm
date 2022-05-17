@@ -2,28 +2,21 @@
   padding-top: 150px
   &__row
     display: flex
-    // & .add__left
-    //   border-bottom: 2px solid $bgc
-    // & .add__right:not(::last-child)
-    //   border-bottom: 2px solid $red
-
   &__left
-    background-color: $black
-    color: $white
-    width: 250px
-    padding: 50px 28px 50px 50px
     display: flex
     flex-shrink: 0
-    // &:not(:last-child)
+    width: 250px
+    padding: 50px 28px 50px 50px
     border-bottom: 2px solid $bgc
+    background-color: $black
+    color: $white
   &__right
-    padding: 50px
-    width: 100%
     display: flex
     align-items: flex-start
     justify-content: space-between
     flex-wrap: wrap
-    // &:not(:last-child)
+    width: 100%
+    padding: 50px
     border-bottom: 2px solid $red
     border-right: 2px solid $red
     & .input:first-child
@@ -31,12 +24,7 @@
 
   &__table
     width: 100%
-    // display: table-row
     border-collapse: collapse
-    // border-spacing: 25px
-    &-row
-      // display: block
-      // margin-bottom: 30px
     &-th
       text-align: left
       font-weight: 400
@@ -44,17 +32,13 @@
         display: block
         margin-bottom: 30px
     &-td
-      // display: flex
-      // align-items: center
       width: 295px
       padding-right: 65px
       padding-bottom: 20px
-      &:not(:last-child)
-
     &-input
-      border: 1px solid $black
       width: 100%
       margin-bottom: 0 !important
+      border: 1px solid $black
       &:focus
         border: 1px solid $red
 
@@ -64,11 +48,12 @@
     border: 1px solid $black
     border-radius: 5px
     resize: none
-    overflow: auto
     outline: none
+    overflow: auto
     &:focus
       border: 1px solid $red
-
   &__sum
     @include font(400, 32, 38)
-    color: $black
+    color: $text
+    input
+      width: 26%

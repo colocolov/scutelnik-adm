@@ -6,7 +6,6 @@
       @include('html/header.html')
 
       <main class="main">
-        <!--  -->
         <section class="add">
           <div class="container">
             <div class="add__row">
@@ -21,7 +20,6 @@
                 <input type="text" class="input" placeholder="Дата ..." />
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Машина</div>
               <div class="add__right">
@@ -31,14 +29,13 @@
                 <input type="text" class="input" placeholder="Пробег ..." />
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Запчасти</div>
               <div class="add__right">
                 <table class="add__table">
                   <thead class="add__table-head">
                     <tr class="add__table-row">
-                      <th class="add__table-th"><span>Запчасть:</span></td>
+                      <th class="add__table-th"><span>Запчасть:</span></th>
                       <th class="add__table-th"><span>Цена:</span></th>
                       <th class="add__table-th"><span>Бренд:</span></th>
                     </tr>
@@ -69,7 +66,11 @@
                     <tr class="add__table-row article__row">
                       <td class="add__table-td article__cell">
                         <a href="#" class="article__cell-add">
-                          <img class="image " src="@img/icons/sprite.svg#plus" alt="">
+                          <img
+                            class="image"
+                            src="@img/icons/sprite.svg#plus"
+                            alt=""
+                          />
                         </a>
                       </td>
                     </tr>
@@ -77,7 +78,6 @@
                 </table>
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Описание работы</div>
               <div class="add__right">
@@ -86,28 +86,24 @@
                   name="descrip"
                   id="descrip"
                   rows="10"
-                  wrap="off"
                   placeholder="Поле ввода ..."
                 ></textarea>
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Цена</div>
               <div class="add__right">
-                <span class="add__sum">5 457 лей</span>
+                <div class="add__sum">
+                  <input type="text" class="input" placeholder="5 457" />лей
+                </div>
               </div>
             </div>
-            <!-- row -->
           </div>
         </section>
         <!--  -->
       </main>
       @include('html/footer-add.html')
     </div>
-
-    <!-- подключение скриптов -->
-    <!-- <script defer src="js/libs.js"></script> -->
     <script defer src="js/main.min.js"></script>
   </body>
 </html>

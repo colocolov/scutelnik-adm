@@ -5,9 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#111111" />
-  <!-- <link rel="stylesheet" href="css/adv.css" /> -->
   <link rel="stylesheet" href="css/style.css" />
-  <!-- подключение favicon -->
   <link
     rel="icon"
     type="image/png"
@@ -24,11 +22,17 @@
     <div class="header__menu menu">
       <nav class="menu__body">
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link" href="add.html">Новая запись</a></li>
-          <li class="menu__item"><a class="menu__link" href="arhive.html">Архив</a></li>
-          <li class="menu__item"><a class="menu__link" href="login.html">Войти</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="add.html">Новая запись</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="arhive.html">Архив</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="login.html">Войти</a>
+          </li>
           <li class="menu__item"><a class="menu__link" href=""></a></li>
-        </li>
+        </ul>
       </nav>
       <button type="button" class="menu__icon">
         <span></span>
@@ -42,16 +46,24 @@
     </a>
     <form action="search.html" class="header__search">
       <button class="btn-reset header__search-btn">
-        <img class="image header__search-img" src="images/icons/sprite.svg#search" alt="">
+        <img
+          class="image header__search-img"
+          src="images/icons/sprite.svg#search"
+          alt=""
+        />
       </button>
-      <input class="header__search-input" type="text" placeholder="Поиск ..." autofocus>
+      <input
+        class="header__search-input"
+        type="text"
+        placeholder="Поиск ..."
+        autofocus
+      />
     </form>
   </div>
 </header>
 
 
       <main class="main">
-        <!--  -->
         <section class="add">
           <div class="container">
             <div class="add__row">
@@ -66,7 +78,6 @@
                 <input type="text" class="input" placeholder="Дата ..." />
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Машина</div>
               <div class="add__right">
@@ -76,14 +87,13 @@
                 <input type="text" class="input" placeholder="Пробег ..." />
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Запчасти</div>
               <div class="add__right">
                 <table class="add__table">
                   <thead class="add__table-head">
                     <tr class="add__table-row">
-                      <th class="add__table-th"><span>Запчасть:</span></td>
+                      <th class="add__table-th"><span>Запчасть:</span></th>
                       <th class="add__table-th"><span>Цена:</span></th>
                       <th class="add__table-th"><span>Бренд:</span></th>
                     </tr>
@@ -114,7 +124,11 @@
                     <tr class="add__table-row article__row">
                       <td class="add__table-td article__cell">
                         <a href="#" class="article__cell-add">
-                          <img class="image " src="images/icons/sprite.svg#plus" alt="">
+                          <img
+                            class="image"
+                            src="images/icons/sprite.svg#plus"
+                            alt=""
+                          />
                         </a>
                       </td>
                     </tr>
@@ -122,7 +136,6 @@
                 </table>
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Описание работы</div>
               <div class="add__right">
@@ -131,19 +144,18 @@
                   name="descrip"
                   id="descrip"
                   rows="10"
-                  wrap="off"
                   placeholder="Поле ввода ..."
                 ></textarea>
               </div>
             </div>
-            <!-- row -->
             <div class="add__row">
               <div class="add__left">Цена</div>
               <div class="add__right">
-                <span class="add__sum">5 457 лей</span>
+                <div class="add__sum">
+                  <input type="text" class="input" placeholder="5 457" />лей
+                </div>
               </div>
             </div>
-            <!-- row -->
           </div>
         </section>
         <!--  -->
@@ -158,9 +170,6 @@
 </footer>
 
     </div>
-
-    <!-- подключение скриптов -->
-    <!-- <script defer src="js/libs.js"></script> -->
     <script defer src="js/main.min.js"></script>
   </body>
 </html>

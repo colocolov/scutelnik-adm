@@ -1,6 +1,6 @@
 .login
-  background-color: $black
   height: 100vh
+  background-color: $black
   color: $bgc
   &__wrap
     display: flex
@@ -8,98 +8,114 @@
     align-items: center
     justify-content: center
     height: 100vh
+    a
+      font-weight: bold
+      color: $red
   &__logo
     width: 340px
     height: 264px
     margin-bottom: 50px
+  &__form-wrap
+    width: 550px
+  &__form-auth
+    margin-top: 40px
+    text-align: center
 
-  &__form
-    display: flex
-    flex-direction: column
+#loginform
+  display: flex
+  flex-direction: column
+  width: 100%
+.login-username,
+.login-password
+  label
+    display: block
     width: 100%
-    &-wrap
-      width: 550px
-  &__field
+    margin-bottom: 6px
+    @include font(400, 16, 19)
+  input
     width: 100%
     margin-bottom: 20px
-  &__text
-    display: block
-    @include font(400, 16, 19)
-    margin-bottom: 6px
-  &__input
-    width: 100%
-    padding: 10px 20px
-    color: $white
+    padding: 12px 20px
     border: 2px solid $bgc
     border-radius: 5px
     background-color: transparent
+    color: $white
     outline: none
     transition: border 0.3s linear
     &:focus
       border: 2px solid $red
-  &__btn
+
+.login-submit
+  order: 3
+  input
     display: block
-    background-color: $red
-    border-radius: 5px
-    color: $bgc
-    padding: 15px 20px
-    margin-top: 25px
+    width: 100%
+    margin-top: 15px
     margin-bottom: 25px
+    padding: 15px 20px
+    background-color: $red
+    border: none
+    border-radius: 5px
     @include font(600, 16, 19)
+    color: $bgc
     text-transform: uppercase
     transition: background-color 0.3s linear
     outline: none
-  &__subform
-    @include fl-all
-  &__checkbox
-    position: absolute
-    opacity: 0
-    // background-color: transparent
-    // border: 1px solid $bgc
-    // outline: none
-    // outline: none
-    // outline: none
-    &-text
-      position: relative
-      display: inline-block
-      padding-left: 22px
-      font-size: 14px
-      &::before
-        content: ''
-        position: absolute
-        left: 0
-        top: 0
-        display: inline-block
-        width: 15px
-        height: 15px
-        border: 1px solid $bgc
-        border-radius: 2px
-        transition: background-color 0.3s linear
-      &::after
-        content: ''
-        position: absolute
-        left: -1px
-        top: 0
-        width: 16px
-        height: 16px
-        background-image: url('../images/icons/sprite.svg#check')
-        background-position: center
-        background-size: 10px 8px
-        background-repeat: no-repeat
-        opacity: 0
-        transition: opacity 0.3s linear
-    &:checked + .login__checkbox-text
-      color: $red
-    &:checked + .login__checkbox-text::before
-      background-color: $red
-      border: 1px solid $red
-    &:checked + .login__checkbox-text::after
-      opacity: 1
+    cursor: pointer
+
+.login-remember
+  order: 4
+  label
+    position: relative
+    display: inline-block
+    font-size: 14px
+    // padding-left: 22px
+    // &::before
+    //   content: ''
+    //   position: absolute
+    //   left: 0
+    //   top: 0
+    //   display: inline-block
+    //   width: 15px
+    //   height: 15px
+    //   border: 1px solid $bgc
+    //   border-radius: 2px
+    //   transition: background-color 0.3s linear
+    // &::after
+    //   content: ''
+    //   position: absolute
+    //   left: -1px
+    //   top: 0
+    //   width: 16px
+    //   height: 16px
+    //   background-image: url('../images/icons/sprite.svg#check')
+    //   background-position: center
+    //   background-size: 10px 8px
+    //   background-repeat: no-repeat
+    //   opacity: 0
+    //   transition: opacity 0.3s linear
+  // input
+    // position: absolute
+    // opacity: 0
+    // left: -3px
+    // z-index: 10
+    // width: 7px
+    // height: 7px
+    // background-color: #fff
+  // input[type="checkbox"]:checked
+  //   left: -3px
+  //   color: $red
+  // input:checked + label::before
+  //   background-color: $red
+  //   border: 1px solid $red
+  // input:checked + label::after
+  //   opacity: 1
+    //
     // &:focus + .login__checkbox-text
     //   outline: 3px solid $red
     //   color: blue
-  &__recovery
-    @include font(400, 16, 19)
-    font-size: 16px
-    line-height: 19px
-    color: $red
+  // &__recovery
+  //   @include font(400, 16, 19)
+  //   font-size: 16px
+  //   line-height: 19px
+  //   color: $red
