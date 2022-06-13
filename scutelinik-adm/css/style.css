@@ -172,6 +172,7 @@ input {
   border-radius: 20px;
   padding: 13px 90px;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .unvisible {
@@ -206,6 +207,7 @@ input {
   padding: 37px 0;
   background-color: #DC101C;
   color: #FFFFFF;
+  z-index: 10;
 }
 .header__container {
   display: -webkit-box;
@@ -531,7 +533,7 @@ input {
 }
 
 .add {
-  padding-top: 150px;
+  padding-top: 120px;
 }
 .add__row {
   display: -webkit-box;
@@ -868,7 +870,7 @@ input {
 }
 
 .search {
-  padding-top: 200px;
+  padding-top: 120px;
 }
 .search__title {
   margin-bottom: 50px;
