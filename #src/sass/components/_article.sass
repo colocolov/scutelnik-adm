@@ -1,10 +1,9 @@
 .article
   &__input
-    &:first-child
-      margin-bottom: 20px !important
+    margin-bottom: 20px !important
   &__row
     display: flex
-    align-items: flex-start
+    align-items: flex-end
     justify-content: space-between
   &__cell
     width: 33%
@@ -14,3 +13,8 @@
       width: 20px
       height: 20px
       text-align: left
+  &__data.article__input
+    border-bottom: 1px solid $red
+    padding: 7px 15px
+    border-radius: 7px
+    width: 45%
